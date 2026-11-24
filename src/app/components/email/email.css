@@ -1,0 +1,74 @@
+.section-card {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #263b43;
+  font-size: 1.05rem;
+  font-weight: 750;
+}
+
+.dot {
+  background: #eaf3ed;
+  color: #4c7964;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.mail-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.mail-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: #fbfcfa;
+  border: 1px solid #edf0ec;
+  border-radius: 13px;
+  padding: 0.75rem 0.8rem;
+}
+
+.mail-list strong {
+  display: block;
+  color: #263b43;
+  font-size: 0.88rem;
+}
+
+.mail-list small {
+  color: #81908f;
+  font-size: 0.72rem;
+}
+
+.mail-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 62px;
+  border-radius: 999px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+
+.mail-badge.blue { background: #e9f0fa; color: #5878a2; }
+.mail-badge.green { background: #e6f3ea; color: #347858; }
+.mail-badge.amber { background: #fbf0e3; color: #a46c38; }

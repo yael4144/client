@@ -1,0 +1,70 @@
+<div class="dashboard">
+  <header class="topbar">
+    <a class="brand" href="#overview" aria-label="Maarechet - חזרה לראש העמוד">
+      <span class="brand__mark" aria-hidden="true">מ</span>
+      <span class="brand__name">Maarechet</span>
+    </a>
+
+    <nav class="main-nav" aria-label="ניווט ראשי">
+      <a class="main-nav__link main-nav__link--active" href="#overview">ראשי</a>
+      <a class="main-nav__link" href="#groups">קבוצות</a>
+    </nav>
+
+    <span class="topbar__status"><span aria-hidden="true"></span> סביבת ניהול</span>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="hero__content">
+        <p class="eyebrow"><span aria-hidden="true"></span> סביבת הניהול שלך</p>
+        <h1>הכול במקום אחד<span>.</span></h1>
+        <p class="hero__subtitle">
+          ניהול הקבוצות והפעילות שלך — במסך אחד ברור, נעים ונוח לשימוש.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#groups">מעבר לקבוצות <span aria-hidden="true">←</span></a>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <span class="hero__orbit hero__orbit--one"></span>
+        <span class="hero__orbit hero__orbit--two"></span>
+        <div class="hero__tile hero__tile--main">
+          <span class="hero__tile-icon">מ</span>
+          <span class="hero__tile-label">הניהול שלך</span>
+          <strong>פשוט. מסודר. ביחד.</strong>
+          <span class="hero__tile-line"></span>
+          <span class="hero__tile-dots"><i></i><i></i><i></i></span>
+        </div>
+        <div class="hero__float hero__float--top"><span>✓</span> מסודר ונגיש</div>
+        <div class="hero__float hero__float--bottom"><span>↗</span> מבט אחד על הכול</div>
+      </div>
+    </section>
+
+    <section class="stats-grid" aria-label="נתוני המערכת">
+      <article class="stat-card stat-card--violet">
+        <span class="stat-card__icon" aria-hidden="true">ק</span>
+        <div><span class="stat-card__label">קבוצות פעילות</span><strong class="stat-card__value">{{ stats.groups }}</strong></div>
+      </article>
+      <article class="stat-card stat-card--amber">
+        <span class="stat-card__icon" aria-hidden="true">✓</span>
+        <div><span class="stat-card__label">סטטוס פעילות</span><strong class="stat-card__value">{{ stats.activity }}</strong></div>
+      </article>
+    </section>
+
+    <section class="workspace" aria-labelledby="workspace-title">
+      <div class="workspace__heading">
+        <div>
+          <p class="eyebrow eyebrow--dark">מבט מהיר</p>
+          <h2 id="workspace-title">מרכז העבודה</h2>
+        </div>
+        <p>הקבוצות שלך, מסודרות ונגישות</p>
+      </div>
+
+      <div class="content-grid">
+        <article class="panel panel--groups" id="groups">
+          <app-group />
+        </article>
+      </div>
+    </section>
+  </main>
+</div>
